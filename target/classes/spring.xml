@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+                 "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ 
+ <beans>
+ <bean id="e1" class="com.showroom.entity.Engine">
+ <property name="model" value="honda 1212"/>
+ <property name="capacity" value="110cc"/>
+ </bean>
+
+<bean id="v1" class="com.showroom.entity.Vehicle">
+<property name="vno" value="xxxx yyyy"/>
+<property name="name" value="Honda"/>
+<!-- ref-> reference variable -->
+<property name="engine" ref="e1"/>
+</bean>
+ </beans>                
